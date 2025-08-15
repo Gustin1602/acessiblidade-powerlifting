@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volkswagen Fusca 1966</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        main { max-width: 800px; margin: auto; padding: 20px; background-color: #222; border-radius: 10px; }
+        .fotos { display: flex; gap: 10px; flex-wrap: wrap; }
+        .fotos img { flex: 1 1 48%; border-radius: 10px; object-fit: cover; }
+        form { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+        input, select { padding: 10px; border: none; border-radius: 5px; outline: none; }
+        label { font-weight: bold; }
+        .btn-comprar { background-color: #28a745; color: white; font-size: 1.2em; border: none; padding: 10px; cursor: pointer; border-radius: 5px; }
+        .btn-comprar:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Volkswagen Fusca 1966</h1>
+    </header>
+
+    <main>
+        <div class="fotos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Volkswagen_K%C3%A4fer_1200_1966.jpg" alt="Volkswagen Fusca 1966">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/VW_Kaefer_Baujahr_1966_IMG_7306.jpg" alt="Volkswagen Fusca Lateral">
+        </div>
+
+        <h2 style="color:#ff6600; margin-top:20px;">Ficha Técnica</h2>
+        <ul>
+            <li>Motor: 1.3L Boxer 4 cilindros</li>
+            <li>Potência: 50 cv</li>
+            <li>Transmissão: Manual 4 marchas</li>
+            <li>Ano: 1966</li>
+        </ul>
+
+        <h2 style="color:#ff6600;">Preço</h2>
+        <p style="font-size: 1.5em; font-weight: bold;">R$ 95.000</p>
+
+        <h2 style="color:#ff6600; margin-top:20px;">Comprar este carro</h2>
+        <form>
+            <label>Nome Completo:</label>
+            <input type="text" placeholder="Digite seu nome" required>
+
+            <label>E-mail:</label>
+            <input type="email" placeholder="Digite seu e-mail" required>
+
+            <label>Telefone:</label>
+            <input type="tel" placeholder="(xx) xxxxx-xxxx" required>
+
+            <label>Forma de Pagamento:</label>
+            <select required>
+                <option value="">Selecione</option>
+                <option>Cartão de Crédito</option>
+                <option>Boleto Bancário</option>
+                <option>Pix</option>
+                <option>Transferência Bancária</option>
+            </select>
+
+            <button type="submit" class="btn-comprar">Finalizar Compra</button>
+        </form>
+    </main>
+</body>
+</html>
